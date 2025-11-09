@@ -80,8 +80,9 @@ section h3 {
 }
 
 .activity-card .participants-list {
-  list-style: disc;
-  margin: 0 0 0 18px;
+  /* Hide default bullets and reset left margin so list appears clean */
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -93,6 +94,29 @@ section h3 {
   border-radius: 4px;
   font-size: 14px;
   color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participant-email {
+  word-break: break-word;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 /* Empty participants state */
