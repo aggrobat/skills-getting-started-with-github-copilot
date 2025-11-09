@@ -65,13 +65,65 @@ section h3 {
   background-color: #f9f9f9;
 }
 
-.activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+/* Participants section styling */
+.activity-card .participants {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #ececec;
 }
 
-.activity-card p {
-  margin-bottom: 8px;
+.activity-card .participants h5 {
+  margin: 0 0 8px 0;
+  color: #1a237e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.activity-card .participants-list {
+  /* Hide default bullets and reset left margin so list appears clean */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.activity-card .participants-list li {
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  background: #ffffff;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participant-email {
+  word-break: break-word;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background: rgba(198, 40, 40, 0.08);
+}
+
+/* Empty participants state */
+.activity-card .no-participants {
+  color: #666;
+  font-style: italic;
+  padding: 6px 0;
 }
 
 .form-group {
